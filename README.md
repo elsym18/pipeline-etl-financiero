@@ -6,7 +6,7 @@ Inspirado en experiencia real en banca, finanzas públicas y QA de datos.
 
 ---
 
-## 🎯 Características
+##  Características
 
 - ✅ **Extract:** generación/carga de transacciones financieras simuladas
 - ✅ **Quality:** 10 reglas de validación (nulos, duplicados, dominios, rangos, fechas)
@@ -29,7 +29,7 @@ CSV crudo   10 reglas    Validos vs   SQLite   CSV + HTML
 
 ---
 
-## 🧰 Tecnologías
+##  Tecnologías
 
 | Categoría | Tecnología |
 |-----------|-----------|
@@ -42,7 +42,7 @@ CSV crudo   10 reglas    Validos vs   SQLite   CSV + HTML
 
 ---
 
-## 📁 Estructura del proyecto
+##  Estructura del proyecto
 
 ```
 pipeline-etl-financiero/
@@ -72,7 +72,7 @@ pipeline-etl-financiero/
 
 ---
 
-## 🚀 Cómo ejecutarlo
+##  Cómo ejecutarlo
 
 ### Requisitos
 
@@ -106,11 +106,11 @@ Los datos, la base y los reportes se generarán automáticamente en `data/` y `d
 docker compose run --rm etl-financiero pytest
 ```
 
-Resultado esperado: **15 tests passed** ✅
+Resultado esperado: **15 tests passed** 
 
 ---
 
-## 📊 Reglas de calidad implementadas
+##  Reglas de calidad implementadas
 
 | # | Regla | Descripción |
 |---|-------|-------------|
@@ -127,7 +127,7 @@ Resultado esperado: **15 tests passed** ✅
 
 ---
 
-## 📈 Ejemplo de salida
+##  Ejemplo de salida
 
 ```
 [1/5] EXTRACCION DE DATOS
@@ -154,7 +154,7 @@ PIPELINE COMPLETADO
 
 ---
 
-## 🧪 Tests
+##  Tests
 
 El proyecto incluye 15 tests automatizados:
 
@@ -175,7 +175,7 @@ Resultado esperado:
 
 ---
 
-## 💡 Motivación
+##  Motivación
 
 Este proyecto fue creado como parte de un portafolio profesional para demostrar habilidades en:
 
@@ -186,7 +186,7 @@ Este proyecto fue creado como parte de un portafolio profesional para demostrar 
 
 ---
 
-## 🛣️ Roadmap
+##  Roadmap
 
 - [x] Pipeline ETL básico
 - [x] Reglas de calidad de datos
@@ -199,7 +199,7 @@ Este proyecto fue creado como parte de un portafolio profesional para demostrar 
 
 ---
 
-## 👤 Autora
+##  Autora
 
 Elsy Molina
 
@@ -208,6 +208,6 @@ Elsy Molina
 
 ---
 
-## 📄 Licencia
+##  Licencia
 
 Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
