@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  etl-financiero:
+    build: .
+    container_name: pipeline_etl_financiero
+    volumes:
+      - ./data:/app/data
+      - ./db:/app/db
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python main.py

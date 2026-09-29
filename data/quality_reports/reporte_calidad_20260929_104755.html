@@ -1,0 +1,110 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Reporte de Calidad de Datos</title>
+        
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #0f172a; color: #f8fafc; padding: 2rem; }
+        h1 { color: #38bdf8; }
+        table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+        th, td { border: 1px solid #334155; padding: 0.6rem; text-align: left; }
+        th { background: #1e293b; color: #38bdf8; }
+        tr:nth-child(even) { background: #1e293b; }
+        .ok { color: #22c55e; font-weight: bold; }
+        .falla { color: #ef4444; font-weight: bold; }
+        .resumen { margin-top: 1.5rem; padding: 1rem; background: #1e293b; border-left: 4px solid #38bdf8; }
+    </style>
+    
+    </head>
+    <body>
+        <h1>📊 Reporte de Calidad de Datos</h1>
+        <p>Generado: 2026-09-29 10:47:55</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Regla</th>
+                    <th>Descripción</th>
+                    <th>Registros afectados</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+        <tr>
+            <td>NO_NULOS::id_transaccion</td>
+            <td>La columna 'id_transaccion' no debe tener nulos</td>
+            <td>0</td>
+            <td class="ok">OK</td>
+        </tr>
+        
+        <tr>
+            <td>NO_NULOS::fecha</td>
+            <td>La columna 'fecha' no debe tener nulos</td>
+            <td>0</td>
+            <td class="ok">OK</td>
+        </tr>
+        
+        <tr>
+            <td>NO_NULOS::monto</td>
+            <td>La columna 'monto' no debe tener nulos</td>
+            <td>15</td>
+            <td class="falla">FALLA</td>
+        </tr>
+        
+        <tr>
+            <td>NO_NULOS::cliente_id</td>
+            <td>La columna 'cliente_id' no debe tener nulos</td>
+            <td>31</td>
+            <td class="falla">FALLA</td>
+        </tr>
+        
+        <tr>
+            <td>UNICIDAD::id_transaccion</td>
+            <td>El id_transaccion debe ser único</td>
+            <td>40</td>
+            <td class="falla">FALLA</td>
+        </tr>
+        
+        <tr>
+            <td>DOMINIO::moneda</td>
+            <td>Moneda debe ser una de {'ARS', 'EUR', 'USD'}</td>
+            <td>10</td>
+            <td class="falla">FALLA</td>
+        </tr>
+        
+        <tr>
+            <td>RANGO::monto_positivo</td>
+            <td>Monto debe ser >= 0.01</td>
+            <td>20</td>
+            <td class="falla">FALLA</td>
+        </tr>
+        
+        <tr>
+            <td>RANGO::monto_maximo</td>
+            <td>Monto no debe exceder 1000000</td>
+            <td>0</td>
+            <td class="ok">OK</td>
+        </tr>
+        
+        <tr>
+            <td>FORMATO::fecha</td>
+            <td>La fecha debe tener formato válido YYYY-MM-DD</td>
+            <td>0</td>
+            <td class="ok">OK</td>
+        </tr>
+        
+        <tr>
+            <td>RANGO::fecha_no_futura</td>
+            <td>La fecha no debe superar 2025-12-31</td>
+            <td>5</td>
+            <td class="falla">FALLA</td>
+        </tr>
+        </tbody>
+        </table>
+        <div class="resumen">
+            <strong>Resumen:</strong> 4/10 reglas OK | 6 con fallas
+        </div>
+    </body>
+    </html>
+    

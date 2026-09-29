@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+env/
+.env
+
+data/raw/*.csv
+data/processed/*.csv
+data/quality_reports/*.csv
+db/*.db
+
+.vscode/
+.idea/
