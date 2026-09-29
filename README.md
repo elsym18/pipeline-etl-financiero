@@ -201,7 +201,7 @@ Este proyecto fue creado como parte de un portafolio profesional para demostrar 
 
 ## 👤 Autora
 
-Elsy MOliana
+Elsy Molina
 
 - LinkedIn: Elsy Molina (https://www.linkedin.com/in/elsymolina/)
 - GitHub: @elsym18 (https://github.com/elsym18)
