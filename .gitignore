@@ -10,6 +10,7 @@ env/
 data/raw/*.csv
 data/processed/*.csv
 data/quality_reports/*.csv
+data/quality_reports/*.html
 db/*.db
 
 .vscode/
